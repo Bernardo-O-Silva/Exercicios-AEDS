@@ -34,9 +34,13 @@ int main(int argc, char** argv){
 
 		}
 
+		if (comparador == (qtdElementos - 1) && parentese == '('){
+
+			errado++;
+
+		}
 
 	}
-	
 	
 	if (qtdElementos % 2 != 0){
 
@@ -66,8 +70,6 @@ int main(int argc, char** argv){
 				break;
 
 			}
-
-
 		}
 		
 		if (qtdNenhum != 0){
