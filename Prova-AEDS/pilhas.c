@@ -22,7 +22,7 @@ void pilha_vet_push(Pilha_vet *p, char v) {
 char pilha_vet_pop(Pilha_vet *p) {
 	if (pilha_vet_vazia(p)) {
 		printf("Pilha vazia.");
-		exit(1);
+		return(1);
 	}
 
 	return p->vet[--p->n];
