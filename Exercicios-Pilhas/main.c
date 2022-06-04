@@ -1,3 +1,5 @@
+//Exercício de Pilhas
+
 #include <stdio.h>
 #include <locale.h>
 #include "pilhas.h"
@@ -28,7 +30,7 @@ void pilhaPushInverso(Pilha_vet *pilha, char parentese){
 
 }
 
-Pilha_vet* pilhaCopia(Pilha_vet *pilhaOrigem, Pilha_vet *pilhaDestino, int qtdElementos){
+void pilhaCopia(Pilha_vet *pilhaOrigem, Pilha_vet *pilhaDestino, int qtdElementos){
 
 	Pilha_vet *pilhaIntermediaria;
 	int comparador;
@@ -53,13 +55,15 @@ Pilha_vet* pilhaCopia(Pilha_vet *pilhaOrigem, Pilha_vet *pilhaDestino, int qtdEl
 
 		elemento = pilha_vet_pop(pilhaIntermediaria);
 		pilha_vet_push(pilhaDestino, elemento);
-	
+        pilha_vet_push(pilhaOrigem, elemento);
+
+
 	}
 
 
 	pilha_vet_libera(pilhaIntermediaria);
-	return pilhaDestino;
 }
+
 
 
 int main(int argc, char** argv){
@@ -198,7 +202,7 @@ int main(int argc, char** argv){
 
 			}
 
-			pilhaParentesesCompara = pilhaCopia(pilhaParentesesCompara2, pilhaParentesesCompara, (qtdElementos - qtdElementosRemov));
+			pilhaCopia(pilhaParentesesCompara2, pilhaParentesesCompara, (qtdElementos - qtdElementosRemov));
 
 		}
 
