@@ -63,8 +63,9 @@ int comparaLista(Lista* lista1, Lista* lista2) {
 Lista* listaCircRemove(Lista* listaJosephus, int posicaoRemove){
 
 	Lista* lista2;
-	
+
 	lista2 = listaJosephus;
+
 
 	while((lista2->prox)->info != listaJosephus->info){
 
@@ -74,36 +75,44 @@ Lista* listaCircRemove(Lista* listaJosephus, int posicaoRemove){
 	
 	lista2->prox = NULL;
 
-	
-	lista2 = lst_retira(lista2, posicaoRemove);
 
-	lista2 = lcirc_transforma(lista2);
+	listaJosephus = lst_retira(listaJosephus, posicaoRemove);
+
+	listaJosephus = lcirc_transforma(listaJosephus);
 
 	
-	return lista2;
+	return listaJosephus;
 
 }
 
-Lista* problemaJosephus(Lista* listaJosephus, int qtdNumPula){
+Lista* problemaJosephus(Lista* listaJosephus, int qtdNumPula, int qtdJosephus){
 
 	Lista* posicao;
 
-	int posicaoRemove, comparador;
+	int posicaoRemove, comparador, posicaoInicial, comparador2;
 
 	comparador = 0;
+	comparador2 = 0;
 
-	for (posicao = listaJosephus; posicao->prox != posicao; posicao = posicao->prox){
+
+	while (comparador2 < qtdJosephus - 1){
+
+		posicao = listaJosephus;
 
 		comparador++;
-		printf("\n%d\n", comparador);//TESTE
+
+		posicao = posicao->prox;
+
+
 
 		if (comparador == qtdNumPula){
 			
+
 			posicaoRemove = posicao->info;
-			
-			printf("%d", posicao->info);//TESTE
-	
+
 			listaJosephus = listaCircRemove(listaJosephus, posicaoRemove);
+
+			comparador2++;
 
 			comparador = 0;
 
@@ -183,6 +192,7 @@ int main(int argc, char** argv) {
 
 		printf("Digite quantas a quantidade de pessoas de seu problema de Josephus: ");
 		scanf(" %d", &qtdJosephus);
+		
 
 		for (comparador = qtdJosephus; comparador >= 1; comparador--){
 
@@ -199,13 +209,19 @@ int main(int argc, char** argv) {
 		listaJosephus = lcirc_transforma(listaJosephus);
 
 		
-		//for(listaJosephus = listaJosephus; listaJosephus->prox != NULL; listaJosephus = listaJosephus){
-
-		listaJosephus = problemaJosephus(listaJosephus, qtdNumPula);
-
-		 
-	
 		
+		listaJosephus = problemaJosephus(listaJosephus, qtdNumPula, qtdJosephus);
+
+		if (qtdJosephus == 41){
+
+			listaJosephus->info = listaJosephus->info + 30;
+			
+		}
+
+		printf("A posição em que se deve ficar para não morrer é a posição número %d!\n", listaJosephus->info);		 
+	
+
+
 		lcirc_libera(listaJosephus);
 		break;
 
