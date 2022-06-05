@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "fila.h"
 
 
@@ -67,15 +68,22 @@ void fila_insere_l(FilaL *f,char *v){
 char *fila_retira_l(FilaL *f){
 	Lista *t;
 	char *v;
+	int tam_v;
 	if(fila_vazia_l(f)){
 		printf("Fila vazia!");
 		exit(1);
 	}
 	t = f->ini;
-	v = t->info;
+	
+	tam_v = strlen(t->info);
+
+	v = (char*)malloc(tam_v * sizeof(char));
+
+	strcpy(v, t->info);
 	f->ini = t->prox;
 	if(f->ini==NULL) f->fim = NULL;
 	free(t);
+
 	return v;
 }
 
