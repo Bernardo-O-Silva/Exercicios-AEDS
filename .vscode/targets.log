@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun  7 18:39:17 2022
+# Make data base, printed on Fri Jul  8 22:39:17 2022
 
 # Variables
 
@@ -23,8 +23,6 @@ GP_OPEN_EDITOR = /ide/bin/remote-cli/gitpod-code
 # default
 .SHELLFLAGS := -c
 # environment
-VSCODE_LOG_NATIVE = false
-# environment
 VSX_REGISTRY_URL = https://open-vsx.gitpod.io
 # environment
 GRADLE_HOME = /home/gitpod/.sdkman/candidates/gradle/current
@@ -32,8 +30,6 @@ GRADLE_HOME = /home/gitpod/.sdkman/candidates/gradle/current
 rvm_path = /home/gitpod/.rvm
 # environment
 SUPERVISOR_ADDR = localhost:22999
-# environment
-SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/d2dbebb6-3a5c-4108-ad45-1ce1eae7d9a8
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -43,7 +39,7 @@ CURDIR := /workspace/Exercicios-AEDS
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-BR","availableLanguages":{}}
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
 _ = /ide/node
 # environment
@@ -62,8 +58,6 @@ MAKEFILE_LIST :=
 GITPOD_WORKSPACE_CONTEXT_URL = https://github.com/Bernardo-O-Silva/Exercicios-AEDS
 # 'override' directive
 GNUMAKEFLAGS := 
-# environment
-VSCODE_VERBOSE_LOGGING = true
 # environment
 THEIA_WORKSPACE_ROOT = /workspace/Exercicios-AEDS
 # environment
@@ -89,7 +83,7 @@ CARGO_HOME = /workspace/.cargo
 # environment
 rvm_stored_umask = 0022
 # environment
-GITPOD_WORKSPACE_CLUSTER_HOST = ws-us46.gitpod.io
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-us53.gitpod.io
 # environment
 GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
 # environment
@@ -103,9 +97,9 @@ GOPATH = /workspace/go
 # environment
 SDKMAN_PLATFORM = linuxx64
 # environment
-VSCODE_LOG_STACK = false
+ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-97d997f9-f863-4f8d-b52a-0ac118c12f63.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f737764f-f603-4385-8dad-6f7cef8fbe7c.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -116,12 +110,12 @@ LS_COLORS =
 %F = $(notdir $%)
 # environment
 GP_PREVIEW_BROWSER = /ide/bin/remote-cli/gitpod-code --preview
+# automatic
+*F = $(notdir $*)
 # environment
 VISUAL = /ide/bin/remote-cli/gitpod-code
 # environment
 NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 rvm_bin_path = /home/gitpod/.rvm/bin
 # environment
@@ -144,10 +138,11 @@ HOME = /home/gitpod
 THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
+ 
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = E12V4jChkRqcd44yGi0ShE4tRc9d-3Lq
+GITPOD_CLI_APITOKEN = kbHs4Sr_cp5riVg6pGD_pEVC7OqxZZ0F
 # automatic
 +F = $(notdir $+)
 # environment
@@ -208,8 +203,8 @@ MAKE_COMMAND := make
 OLDPWD = /
 # default
 .VARIABLES := 
-# automatic
-*F = $(notdir $*)
+# environment
+GITPOD_WORKSPACE_CLASS = default
 # environment
 GITPOD_PREVENT_METADATA_ACCESS = true
 # environment
@@ -275,9 +270,9 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 862827ee-8b89-4c75-bcd3-b7ea73b6db28
+GITPOD_INSTANCE_ID = 9cf93aa7-ab79-48a8-b3e9-b8c0365b4cd1
 # environment
-GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-zrjis6i3pag.ws-us46.gitpod.io
+GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-zrjis6i3pag.ws-us53.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -285,11 +280,9 @@ LANG = C
 # environment
 PYTHONUSERBASE = /workspace/.pip-modules
 # environment
-VSCODE_EXTHOST_WILL_SEND_SOCKET = true
-# environment
 MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.5
 # variable set hash-table stats:
-# Load=138/1024=13%, Rehash=0, Collisions=13/160=8%
+# Load=134/1024=13%, Rehash=0, Collisions=14/156=9%
 
 # Pattern-specific Variable Values
 
@@ -297,9 +290,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.5
 
 # Directories
 
-# . (device 2346, inode 671223705): 8 files, no impossibilities.
+# . (device 2346, inode 403127146): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -316,6 +309,7 @@ all:
 
 # Not a target:
 Makefile:
+ 
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
@@ -349,12 +343,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 167 B / avg = 10 B
-# current buf: size = 8162 B / used = 167 B / count = 16 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 186 B / avg = 10 B
+# current buf: size = 8162 B / used = 186 B / count = 17 / avg = 10 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
-# Finished Make data base on Tue Jun  7 18:39:17 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Fri Jul  8 22:39:17 2022
 
  
