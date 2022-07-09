@@ -40,11 +40,11 @@ Arv* arv_insere_maior_menor (Arv *a, char c) {
 		a->info = c;
 		a->esq = a->dir = NULL;
 	}
-	else if (c < a->info){
-		a->esq = arv_insere (a->esq, c);
+	else if (c >= a->info){
+		a->dir = arv_insere_maior_menor (a->dir, c);
 	}
 	else {
-		a->dir = arv_insere (a->dir, c);
+		a->esq = arv_insere_maior_menor (a->esq, c);
 	}
 	return a;
 }
