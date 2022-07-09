@@ -33,6 +33,7 @@ Arv* arv_insere (Arv *a, char c) {
 	return a;
 }
 
+//Função para inserir mostrada no slide;
 Arv* arv_insere_maior_menor (Arv *a, char c) {
 	if (a == NULL) {
 		a = (Arv *) malloc(sizeof(Arv));

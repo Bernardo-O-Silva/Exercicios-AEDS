@@ -8,14 +8,14 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul  8 22:39:17 2022
+# Make data base, printed on Sat Jul  9 00:19:46 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-RUBY_VERSION = ruby-2.7.5
+RUBY_VERSION = ruby-2.7.6
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -49,7 +49,7 @@ GITPOD_THEIA_PORT = 23000
 # environment
 GITPOD_ANALYTICS_WRITER = segment
 # environment
-GO_VERSION = 1.18.1
+GO_VERSION = 1.18.3
 # environment
 MAVEN_HOME = /home/gitpod/.sdkman/candidates/maven/current
 # makefile
@@ -71,11 +71,11 @@ VSCODE_CWD = /ide
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.5/bin:/home/gitpod/.rvm/gems/ruby-2.7.5@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.5/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/workspace/go/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.14.2/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/home/gitpod/.pyenv/shims:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.14.2/bin:/home/gitpod/.rvm/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.14.2/bin:/home/gitpod/.nvm/versions/node/v16.14.2/bin:/home/gitpod/.rvm/bin
+PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin
 # environment
 GITPOD_OWNER_ID = 21fd7e19-4dac-404b-b707-f47cacf7d9e1
 # environment
-GITPOD_WORKSPACE_ID = bernardoosi-exerciciosa-zrjis6i3pag
+GITPOD_WORKSPACE_ID = bernardoosi-exerciciosa-iq30ed5tx3o
 # environment
 GITPOD_INTERVAL = 30000
 # environment
@@ -99,7 +99,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f737764f-f603-4385-8dad-6f7cef8fbe7c.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1da6aede-0ed5-488d-85c1-8e9f58a76282.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -123,11 +123,11 @@ WORKSPACEKIT_WRAP_NETNS = true
 # default
 .LOADED := 
 # environment
-GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.5
+GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.6
 # environment
 MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
 # environment
-NODE_VERSION = 16.14.2
+NODE_VERSION = 16.15.1
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -138,11 +138,10 @@ HOME = /home/gitpod
 THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
- 
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = kbHs4Sr_cp5riVg6pGD_pEVC7OqxZZ0F
+GITPOD_CLI_APITOKEN = M3y0NmiOz5zHB1Uj2Rv_FMrOnRpKnu-.
 # automatic
 +F = $(notdir $+)
 # environment
@@ -150,21 +149,22 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-HOSTNAME = bernardoosi-exerciciosa-zrjis6i3pag
+HOSTNAME = bernardoosi-exerciciosa-iq30ed5tx3o
 # environment
 GRADLE_USER_HOME = /workspace/.gradle/
 # environment
 MAKELEVEL := 0
 # environment
-GEM_PATH = /home/gitpod/.rvm/gems/ruby-2.7.5:/home/gitpod/.rvm/gems/ruby-2.7.5@global
+GEM_PATH = /home/gitpod/.rvm/gems/ruby-2.7.6:/home/gitpod/.rvm/gems/ruby-2.7.6@global
 # environment
 SDKMAN_VERSION = 5.15.0
 # default
 MAKE = $(MAKE_COMMAND)
+ 
 # default
 MAKECMDGOALS := all
 # environment
-IRBRC = /home/gitpod/.rvm/rubies/ruby-2.7.5/.irbrc
+IRBRC = /home/gitpod/.rvm/rubies/ruby-2.7.6/.irbrc
 # environment
 SHLVL = 0
 # environment
@@ -250,7 +250,7 @@ PWD = /workspace/Exercicios-AEDS
 # environment
 LC_ALL = C
 # environment
-GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"Bernardo-O-Silva/Exercicios-AEDS - main","ref":"main","refType":"branch","revision":"76ace79576cfffc121fb93ff4391085ae178040c","repository":{"cloneUrl":"https://github.com/Bernardo-O-Silva/Exercicios-AEDS.git","host":"github.com","name":"Exercicios-AEDS","owner":"Bernardo-O-Silva","private":true},"normalizedContextURL":"https://github.com/Bernardo-O-Silva/Exercicios-AEDS","checkoutLocation":"Exercicios-AEDS"}
+GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"Bernardo-O-Silva/Exercicios-AEDS - main","ref":"main","refType":"branch","revision":"424c86a7526aadb0505db01e4fcb19e881aab0b4","repository":{"cloneUrl":"https://github.com/Bernardo-O-Silva/Exercicios-AEDS.git","host":"github.com","name":"Exercicios-AEDS","owner":"Bernardo-O-Silva","private":false},"normalizedContextURL":"https://github.com/Bernardo-O-Silva/Exercicios-AEDS","checkoutLocation":"Exercicios-AEDS"}
 # environment
 JAVA_TOOL_OPTIONS =  -Xmx3435m
 # automatic
@@ -270,9 +270,9 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 9cf93aa7-ab79-48a8-b3e9-b8c0365b4cd1
+GITPOD_INSTANCE_ID = 33f22e6b-b025-4ea4-941e-aa4ed47d1ada
 # environment
-GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-zrjis6i3pag.ws-us53.gitpod.io
+GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us53.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -280,7 +280,7 @@ LANG = C
 # environment
 PYTHONUSERBASE = /workspace/.pip-modules
 # environment
-MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.5
+MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 # variable set hash-table stats:
 # Load=134/1024=13%, Rehash=0, Collisions=14/156=9%
 
@@ -290,7 +290,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.5
 
 # Directories
 
-# . (device 2346, inode 403127146): 9 files, no impossibilities.
+# . (device 2346, inode 3355457303): 9 files, no impossibilities.
 
 # 9 files, no impossibilities in 1 directories.
 
@@ -309,7 +309,6 @@ all:
 
 # Not a target:
 Makefile:
- 
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
@@ -349,6 +348,6 @@ GNUmakefile:
 # strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Fri Jul  8 22:39:17 2022
+# Finished Make data base on Sat Jul  9 00:19:46 2022
 
  
