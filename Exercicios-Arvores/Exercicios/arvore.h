@@ -18,6 +18,7 @@ int arv_pertence(Arv* a,char v);
 void arv_imprime_preordem(Arv* a);
 void arv_imprime_simetrica(Arv* a);
 void arv_imprime_posordem(Arv* a);
+void arv_conta(Arv* a, int* contagemTotal);
 
 static int max2(int a,int b);
 int arv_altura(Arv *a);

@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#define NUM_FILHO 0
+#define NUM_NO_UM 1
+#define NUM_NO_DOIS 2
 
 Arv* arv_criavazia(){return NULL;}
 
@@ -81,6 +84,30 @@ Arv* arv_libera(Arv* a){
 	}
 	return NULL;
 }
+
+void arv_conta(Arv* a, int* contagemTotal){
+	
+	if(!arv_vazia(a)){
+		if (a->esq == NULL && a->dir == NULL){
+
+			contagemTotal[NUM_FILHO]++;
+
+		}
+		else if (a->esq != NULL && a->dir != NULL){
+
+			contagemTotal[NUM_NO_DOIS]++;
+
+		}
+		else if (a->esq != NULL || a->dir != NULL){
+
+			contagemTotal[NUM_NO_UM]++;
+
+		}
+		arv_conta(a->esq, contagemTotal);
+		arv_conta(a->dir, contagemTotal);
+	}
+}
+
 
 int arv_pertence(Arv* a,char v){
 	if(arv_vazia(a))	return 0;
