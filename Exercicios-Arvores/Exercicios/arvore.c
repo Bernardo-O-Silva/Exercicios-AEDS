@@ -108,6 +108,38 @@ void arv_conta(Arv* a, int* contagemTotal){
 	}
 }
 
+void arv_pega_char(Arv* a, char* letraSaida, int comparador){
+	
+	if(!arv_vazia(a)){
+		
+		letraSaida[comparador] = a->info;
+
+		comparador++;
+
+		arv_pega_char(a->esq, letraSaida, comparador);
+		arv_pega_char(a->dir, letraSaida, comparador);
+	}
+}
+
+void elementosContaImprime(char* letraSaida, int qtdTotal){
+
+	int comparador;
+
+	for (comparador = 0; comparador < qtdTotal; comparador++){
+
+		if 
+
+
+
+	}
+
+
+
+
+
+}
+
+
 
 int arv_pertence(Arv* a,char v){
 	if(arv_vazia(a))	return 0;

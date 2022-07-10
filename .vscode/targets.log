@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul  9 20:34:28 2022
+# Make data base, printed on Sun Jul 10 23:25:03 2022
 
 # Variables
 
@@ -99,7 +99,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-8c59c544-2403-43a7-b6f7-d9255b5fe25a.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-18359d02-23e3-4b92-9c92-d07eddf3f218.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -141,7 +141,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = kj8NurjZdUyGP7YIS0Hdg1vzYdr37ECh
+GITPOD_CLI_APITOKEN = 1OHcHJFDcSf3y2Yqd1pAdlObls3f5HFi
 # automatic
 +F = $(notdir $+)
 # environment
@@ -269,7 +269,7 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = e13b855a-45e8-49b2-ae02-edfad60fcc70
+GITPOD_INSTANCE_ID = 2fa93385-2f07-4614-89a2-3263ba765b58
 # environment
 GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us53.gitpod.io
 # default
@@ -289,7 +289,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 3221965817): 9 files, no impossibilities.
+# . (device 2346, inode 2013626460): 9 files, no impossibilities.
 
 # 9 files, no impossibilities in 1 directories.
 
@@ -347,6 +347,6 @@ GNUmakefile:
 # strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Sat Jul  9 20:34:28 2022
+# Finished Make data base on Sun Jul 10 23:25:03 2022
 
  
