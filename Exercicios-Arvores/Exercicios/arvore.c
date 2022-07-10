@@ -108,6 +108,7 @@ void arv_conta(Arv* a, int* contagemTotal){
 	}
 }
 
+/*
 void arv_pega_char(Arv* a, char* letraSaida, int comparador){
 	
 	if(!arv_vazia(a)){
@@ -138,7 +139,7 @@ void elementosContaImprime(char* letraSaida, int qtdTotal){
 
 
 }
-
+*/
 
 
 int arv_pertence(Arv* a,char v){
