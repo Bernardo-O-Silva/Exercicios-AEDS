@@ -5,6 +5,7 @@
 #define NUM_FILHO 0
 #define NUM_NO_UM 1
 #define NUM_NO_DOIS 2
+#define QTD_ALFABETO 26
 
 Arv* arv_criavazia(){return NULL;}
 
@@ -108,39 +109,34 @@ void arv_conta(Arv* a, int* contagemTotal){
 	}
 }
 
-/*
-void arv_pega_char(Arv* a, char* letraSaida, int comparador){
+void arv_letras(Arv* a, int* valores){
 	
+	int comparador, letraAtual;
+
+	letraAtual = 65;	
+
 	if(!arv_vazia(a)){
 		
-		letraSaida[comparador] = a->info;
+		for (comparador = 0; comparador < QTD_ALFABETO; comparador++){
 
-		comparador++;
+			if (a->info == letraAtual){
 
-		arv_pega_char(a->esq, letraSaida, comparador);
-		arv_pega_char(a->dir, letraSaida, comparador);
+				valores[comparador]++;
+				comparador = QTD_ALFABETO;
+
+			}
+			else {
+
+				letraAtual++;
+
+			}
+
+		}
+
+		arv_letras(a->esq, valores);
+		arv_letras(a->dir, valores);
 	}
 }
-
-void elementosContaImprime(char* letraSaida, int qtdTotal){
-
-	int comparador;
-
-	for (comparador = 0; comparador < qtdTotal; comparador++){
-
-		if 
-
-
-
-	}
-
-
-
-
-
-}
-*/
-
 
 int arv_pertence(Arv* a,char v){
 	if(arv_vazia(a))	return 0;

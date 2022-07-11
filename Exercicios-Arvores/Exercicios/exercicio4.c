@@ -14,9 +14,14 @@ Modifique a inserção da questão 2 para aceitar valores iguais.*/
 int main(int argc, char** argv){
 
     Arv* arvrinha;
+    int* valores, comparador, comparador2, letraAlfabeto;
     char charUser;
+    
+    letraAlfabeto = 65;
 
     arvrinha = arv_criavazia();
+
+    valores = (int*)calloc(QTD_ALFABETO, sizeof(int));
 
     while (charUser != '0'){
 
@@ -27,15 +32,32 @@ int main(int argc, char** argv){
 
         if (charUser != '0'){
 
-            arvorinha = arv_insere_maior_menor(arvorita, charUser);
-            qtdTotal++;
+            arvrinha = arv_insere_maior_menor(arvrinha, charUser);
 
         }
     }    
     
+    arv_letras(arvrinha, valores);
+
+    for (comparador = 0; comparador < QTD_ALFABETO; comparador++){
+
+        printf("%c: ", letraAlfabeto);
+
+        for (comparador2 = 0; comparador2 < valores[comparador]; comparador2++){
+
+            printf("*");
+
+        }
+
+        printf("\n");
+
+        letraAlfabeto++;
+
+    }
 
 
 
+    free(valores);
     arv_libera(arvrinha);
     return SUCESSO;
 }
