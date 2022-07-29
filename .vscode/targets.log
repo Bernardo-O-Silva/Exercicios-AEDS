@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 10 23:25:03 2022
+# Make data base, printed on Thu Jul 28 23:23:26 2022
 
 # Variables
 
@@ -83,7 +83,7 @@ CARGO_HOME = /workspace/.cargo
 # environment
 rvm_stored_umask = 0022
 # environment
-GITPOD_WORKSPACE_CLUSTER_HOST = ws-us53.gitpod.io
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-us54.gitpod.io
 # environment
 GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
 # environment
@@ -99,7 +99,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-18359d02-23e3-4b92-9c92-d07eddf3f218.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-38aecf41-250e-4d87-b27a-8a0adf508b59.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -141,7 +141,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = 1OHcHJFDcSf3y2Yqd1pAdlObls3f5HFi
+GITPOD_CLI_APITOKEN = AcQskfe5MfPneIEN7gVCyEr3zdvjv404
 # automatic
 +F = $(notdir $+)
 # environment
@@ -269,9 +269,9 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 2fa93385-2f07-4614-89a2-3263ba765b58
+GITPOD_INSTANCE_ID = 28512428-7378-49c3-a1c4-ca03a0bdbc83
 # environment
-GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us53.gitpod.io
+GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us54.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -289,9 +289,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 2013626460): 9 files, no impossibilities.
+# . (device 2346, inode 1208004010): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -341,12 +341,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 186 B / avg = 10 B
-# current buf: size = 8162 B / used = 186 B / count = 17 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 204 B / avg = 11 B
+# current buf: size = 8162 B / used = 204 B / count = 18 / avg = 11 B
 
-# strcache performance: lookups = 20 / hit rate = 15%
+# strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Sun Jul 10 23:25:03 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Thu Jul 28 23:23:26 2022
 
  
