@@ -90,7 +90,8 @@ int main(int argc, char** argv){
 
             printf("Vértice %d não poussui grau;\n", comparador + 1);
 
-        }else {
+        }
+        else {
 
             printf("Vértice %d: %dº grau;\n", comparador + 1, grauVertices[comparador]);
         

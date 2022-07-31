@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 28 23:23:26 2022
+# Make data base, printed on Sun Jul 31 18:50:56 2022
 
 # Variables
 
@@ -83,7 +81,7 @@ CARGO_HOME = /workspace/.cargo
 # environment
 rvm_stored_umask = 0022
 # environment
-GITPOD_WORKSPACE_CLUSTER_HOST = ws-us54.gitpod.io
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-us58.gitpod.io
 # environment
 GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
 # environment
@@ -99,7 +97,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-38aecf41-250e-4d87-b27a-8a0adf508b59.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-dc52af6c-2098-43f4-b47a-d7fe81679a7c.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -141,7 +139,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = AcQskfe5MfPneIEN7gVCyEr3zdvjv404
+GITPOD_CLI_APITOKEN = 4oO00WhufyBywncG6WeTLr7wgTVFV9Vj
 # automatic
 +F = $(notdir $+)
 # environment
@@ -269,9 +267,9 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 28512428-7378-49c3-a1c4-ca03a0bdbc83
+GITPOD_INSTANCE_ID = 75bf6754-e5c0-499c-a6c6-c0afca209729
 # environment
-GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us54.gitpod.io
+GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us58.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -289,7 +287,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 1208004010): 10 files, no impossibilities.
+# . (device 2346, inode 2148657656): 10 files, no impossibilities.
 
 # 10 files, no impossibilities in 1 directories.
 
@@ -347,6 +345,8 @@ GNUmakefile:
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Thu Jul 28 23:23:26 2022
+# Finished Make data base on Sun Jul 31 18:50:56 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+
