@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 31 18:50:56 2022
+# Make data base, printed on Wed Sep 14 15:59:04 2022
 
 # Variables
 
@@ -28,6 +30,8 @@ GRADLE_HOME = /home/gitpod/.sdkman/candidates/gradle/current
 rvm_path = /home/gitpod/.rvm
 # environment
 SUPERVISOR_ADDR = localhost:22999
+# environment
+GITPOD_WORKSPACE_CLASS_INFO = {"id":"default","category":"GENERAL PURPOSE","displayName":"Standard (old)","description":"Up to 6 vCPU, 12GB memory, 30GB disk","powerups":1,"isDefault":false,"deprecated":true}
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -81,7 +85,7 @@ CARGO_HOME = /workspace/.cargo
 # environment
 rvm_stored_umask = 0022
 # environment
-GITPOD_WORKSPACE_CLUSTER_HOST = ws-us58.gitpod.io
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-us65.gitpod.io
 # environment
 GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
 # environment
@@ -97,7 +101,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-dc52af6c-2098-43f4-b47a-d7fe81679a7c.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-4a65df1c-f247-4b3b-a82e-d55f0e2084f6.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -139,7 +143,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = 4oO00WhufyBywncG6WeTLr7wgTVFV9Vj
+GITPOD_CLI_APITOKEN = jhODTaAjfVMt4wgAw_8iEPPgKA2HA292
 # automatic
 +F = $(notdir $+)
 # environment
@@ -221,7 +225,7 @@ rvm_user_install_flag = 1
 # environment
 BROWSER = /ide/bin/helpers/browser.sh
 # environment
-GITPOD_MEMORY = 3435
+GITPOD_MEMORY = 3489
 # environment
 VSCODE_HANDLES_SIGPIPE = true
 # default
@@ -249,7 +253,7 @@ LC_ALL = C
 # environment
 GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"Bernardo-O-Silva/Exercicios-AEDS - main","ref":"main","refType":"branch","revision":"424c86a7526aadb0505db01e4fcb19e881aab0b4","repository":{"cloneUrl":"https://github.com/Bernardo-O-Silva/Exercicios-AEDS.git","host":"github.com","name":"Exercicios-AEDS","owner":"Bernardo-O-Silva","private":false},"normalizedContextURL":"https://github.com/Bernardo-O-Silva/Exercicios-AEDS","checkoutLocation":"Exercicios-AEDS"}
 # environment
-JAVA_TOOL_OPTIONS =  -Xmx3435m
+JAVA_TOOL_OPTIONS =  -Xmx3489m
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -259,6 +263,7 @@ SUFFIXES :=
 # environment
 APACHE_DOCROOT_IN_REPO = public
 # environment
+ 
 PYENV_VIRTUALENV_INIT = 1
 # environment
 NGINX_DOCROOT_IN_REPO = public
@@ -267,9 +272,9 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 75bf6754-e5c0-499c-a6c6-c0afca209729
+GITPOD_INSTANCE_ID = 3eed7cb2-8593-40d8-87f8-aed52c93db4b
 # environment
-GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us58.gitpod.io
+GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us65.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -279,7 +284,7 @@ PYTHONUSERBASE = /workspace/.pip-modules
 # environment
 MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 # variable set hash-table stats:
-# Load=134/1024=13%, Rehash=0, Collisions=14/156=9%
+# Load=135/1024=13%, Rehash=0, Collisions=14/157=9%
 
 # Pattern-specific Variable Values
 
@@ -287,9 +292,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 2148657656): 10 files, no impossibilities.
+# . (device 2346, inode 2550162032): 28 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 28 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -339,14 +344,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 204 B / avg = 11 B
-# current buf: size = 8162 B / used = 204 B / count = 18 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 36 / storage = 429 B / avg = 11 B
+# current buf: size = 8162 B / used = 429 B / count = 36 / avg = 11 B
 
-# strcache performance: lookups = 21 / hit rate = 14%
+# strcache performance: lookups = 39 / hit rate = 7%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Sun Jul 31 18:50:56 2022
+# Load=36/8192=0%, Rehash=0, Collisions=1/39=3%
+# Finished Make data base on Wed Sep 14 15:59:04 2022
 
  
-make: *** No rule to make target 'all'.  Stop.
-
