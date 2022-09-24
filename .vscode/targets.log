@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Sep 21 19:04:53 2022
+# Make data base, printed on Sat Sep 24 11:15:19 2022
 
 # Variables
 
@@ -101,7 +101,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-2fcc6483-47d9-45ba-9852-f16473406243.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-539e5d2a-1760-45d2-acfb-38ae73acbf47.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -141,7 +141,7 @@ THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-GITPOD_CLI_APITOKEN = mwzfeyOQXOQSPASzTt93vpIn_EX0zvEK
+GITPOD_CLI_APITOKEN = lN9ZhDcZwk6BKeyXPdPq_M-vr.rijZV6
 # automatic
 +F = $(notdir $+)
 # environment
@@ -269,7 +269,7 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 3dca2c7e-62c0-42ea-9e9d-eb797c34a14a
+GITPOD_INSTANCE_ID = 834dde06-b45a-450d-a452-aacc0cec8101
 # environment
 GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us67.gitpod.io
 # default
@@ -289,7 +289,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 536875730): 6 files, no impossibilities.
+# . (device 2346, inode 1476406019): 6 files, no impossibilities.
 
 # 6 files, no impossibilities in 1 directories.
 
@@ -297,6 +297,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # No implicit rules.
 
+ 
 # Files
 
 # Not a target:
@@ -347,6 +348,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=1/17=6%
-# Finished Make data base on Wed Sep 21 19:04:53 2022
+# Finished Make data base on Sat Sep 24 11:15:19 2022
 
  
