@@ -2,7 +2,7 @@ using System;
 
 class Exercicio_6_e_9 {
 
-    static void Main(String[] args){
+    static void Main(string[] args){
 
         int numero;
         int [] fibonacci = new int[12];

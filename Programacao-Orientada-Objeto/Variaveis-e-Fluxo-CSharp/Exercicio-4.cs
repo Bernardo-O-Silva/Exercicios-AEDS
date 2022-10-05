@@ -2,7 +2,7 @@ using System;
 
 class Exercicio_4 {
 
-    static void Main(String[] args){
+    static void Main(string[] args){
 
         int fatorial, comparador, comparador2;
 

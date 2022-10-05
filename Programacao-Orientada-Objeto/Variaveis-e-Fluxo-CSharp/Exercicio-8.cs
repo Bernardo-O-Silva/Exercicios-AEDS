@@ -2,7 +2,7 @@ using System;
 
 class Exercicio_8 {
 
-    static void Main(String[] args){
+    static void Main(string[] args){
 
         int numero, comparador, comparador2, numImprime;
 

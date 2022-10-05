@@ -5,7 +5,7 @@ using System;
 
 class Exercicio_5 {
 
-    static void Main(String[] args){
+    static void Main(string[] args){
 
         long fatorial, comparador, comparador2;
 

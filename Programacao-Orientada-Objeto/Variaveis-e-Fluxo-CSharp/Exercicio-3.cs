@@ -2,7 +2,7 @@ using System;
 
 class Exercicio_2 {
 
-    static void Main(String[] args){
+    static void Main(string[] args){
 
         int numero;
 
