@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Oct 26 16:45:07 2022
+# Make data base, printed on Wed Nov 23 19:07:23 2022
 
 # Variables
 
@@ -36,8 +38,8 @@ GITPOD_WORKSPACE_CLASS_INFO = {"id":"default","category":"GENERAL PURPOSE","disp
 @F = $(notdir $@)
 # makefile
 CURDIR := /workspace/Exercicios-AEDS
-# makefile
-SHELL = /bin/sh
+# default
+SHELL := /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
@@ -67,11 +69,11 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 GIT_EDITOR = /ide/bin/remote-cli/gitpod-code --wait
 # environment
-VSCODE_CWD = /ide
+VSCODE_CWD = /
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin
+PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.rvm/bin
 # environment
 GITPOD_OWNER_ID = 21fd7e19-4dac-404b-b707-f47cacf7d9e1
 # environment
@@ -83,7 +85,7 @@ CARGO_HOME = /workspace/.cargo
 # environment
 rvm_stored_umask = 0022
 # environment
-GITPOD_WORKSPACE_CLUSTER_HOST = ws-us72.gitpod.io
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-us77.gitpod.io
 # environment
 GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
 # environment
@@ -99,7 +101,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1cd27e93-57c6-4bbd-aa47-317af8b96080.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e74060e0-b7fd-4c84-adcb-274d666c858b.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -125,7 +127,7 @@ WORKSPACEKIT_WRAP_NETNS = true
 # environment
 GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.6
 # environment
-MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
+MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
 # environment
 NODE_VERSION = 16.15.1
 # environment
@@ -139,7 +141,7 @@ THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-GITPOD_CLI_APITOKEN = alj--a1UFC-IrM5O70FSRfOPEn8hNPGG
+GITPOD_CLI_APITOKEN = UQDxGXoaY5h2jN1Cn00vNXAKaHC_EYCS
 # automatic
 +F = $(notdir $+)
 # environment
@@ -196,8 +198,6 @@ THEIA_MINI_BROWSER_HOST_PATTERN = browser-{{hostname}}
 GITPOD_GIT_USER_EMAIL = 2021951558@teiacoltec.org
 # default
 MAKE_COMMAND := make
-# environment
-OLDPWD = /
 # default
 .VARIABLES := 
 # environment
@@ -257,6 +257,7 @@ rvm_prefix = /home/gitpod
 # default
 SUFFIXES := 
 # environment
+ 
 APACHE_DOCROOT_IN_REPO = public
 # environment
 PYENV_VIRTUALENV_INIT = 1
@@ -267,9 +268,9 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 4817b002-749b-4282-b95e-45f5d8fbcf35
+GITPOD_INSTANCE_ID = df91daab-a94c-4be3-9ce5-485ddf96448d
 # environment
-GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us72.gitpod.io
+GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us77.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -279,7 +280,7 @@ PYTHONUSERBASE = /workspace/.pip-modules
 # environment
 MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 # variable set hash-table stats:
-# Load=134/1024=13%, Rehash=0, Collisions=14/156=9%
+# Load=133/1024=13%, Rehash=0, Collisions=14/154=9%
 
 # Pattern-specific Variable Values
 
@@ -287,7 +288,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 402661631): 7 files, no impossibilities.
+# . (device 64769, inode 2462061941): 7 files, no impossibilities.
 
 # 7 files, no impossibilities in 1 directories.
 
@@ -345,8 +346,6 @@ GNUmakefile:
 # strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
 # Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
-# Finished Make data base on Wed Oct 26 16:45:07 2022
+# Finished Make data base on Wed Nov 23 19:07:23 2022
 
  
-make: *** No rule to make target 'all'.  Stop.
-
