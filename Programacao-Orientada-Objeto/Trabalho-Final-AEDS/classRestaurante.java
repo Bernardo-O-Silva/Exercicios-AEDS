@@ -48,5 +48,17 @@ class Restaurante {
 
     }
 
+    public void mostraInfo(){
+
+        System.out.println("Nome: Restaurante "+ this.nome);
+        System.out.println("Endereço: "+ this.endereco);
+
+        for (int comparador = 0; comparador < this.NUM_MESAS; comparador++){
+
+            this.mesas[comparador].imprimeInfo();
+
+        }
+
+    }
 
 }

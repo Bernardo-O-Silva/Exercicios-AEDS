@@ -1,6 +1,5 @@
 import java.util.ArrayList;
-
-public abstract class Comanda{
+abstract class Comanda{
     private ArrayList<String> consumo = new ArrayList<String>();
     private double valor;
 
