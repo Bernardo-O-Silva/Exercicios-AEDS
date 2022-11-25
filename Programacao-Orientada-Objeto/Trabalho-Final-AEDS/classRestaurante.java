@@ -1,15 +1,36 @@
 class Restaurante {
 
+    //Constantes
+    private static final int NUM_MESAS = 10;
+    
+    //Variáveis
     private String nome;
     private String endereco;
+    private Mesa[] mesas = new Mesa[this.NUM_MESAS];
 
+    //Construtor
+
+    public Restaurante(){
+
+        for(int comparador = 0; comparador < this.NUM_MESAS; comparador++){
+
+            this.mesas[comparador] = new Mesa();                       
+
+        }
+
+        this.setNome("Buchinho Cheio");
+        this.setEndereco("Rua Ananás - Nº 41 - Bairro das Frutas");
+
+    }
+
+    //Métodos
     public String getNome(){
 
         return this.nome;
 
     }
 
-    public void setNome(String nome;){
+    public void setNome(String nome){
 
         this.nome = nome;
 
@@ -21,7 +42,7 @@ class Restaurante {
 
     }
 
-    public void setEndereco(String endereco;){
+    public void setEndereco(String endereco){
 
         this.endereco = endereco;
 

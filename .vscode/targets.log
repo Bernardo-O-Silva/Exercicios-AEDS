@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Nov 23 19:07:23 2022
+# Make data base, printed on Thu Nov 24 22:35:45 2022
 
 # Variables
 
@@ -101,7 +101,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e74060e0-b7fd-4c84-adcb-274d666c858b.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-9966ff93-8db8-43b1-8dd4-cb545c796156.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -141,7 +141,7 @@ THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-GITPOD_CLI_APITOKEN = UQDxGXoaY5h2jN1Cn00vNXAKaHC_EYCS
+GITPOD_CLI_APITOKEN = QrLLw3EldTeiFYipVa98ZdGuU30JH8LL
 # automatic
 +F = $(notdir $+)
 # environment
@@ -257,7 +257,6 @@ rvm_prefix = /home/gitpod
 # default
 SUFFIXES := 
 # environment
- 
 APACHE_DOCROOT_IN_REPO = public
 # environment
 PYENV_VIRTUALENV_INIT = 1
@@ -268,7 +267,7 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = df91daab-a94c-4be3-9ce5-485ddf96448d
+GITPOD_INSTANCE_ID = 6d6ba430-033f-45f0-8dff-f6a10102c9c4
 # environment
 GITPOD_WORKSPACE_URL = https://bernardoosi-exerciciosa-iq30ed5tx3o.ws-us77.gitpod.io
 # default
@@ -288,7 +287,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 64769, inode 2462061941): 7 files, no impossibilities.
+# . (device 64769, inode 2875196621): 7 files, no impossibilities.
 
 # 7 files, no impossibilities in 1 directories.
 
@@ -308,6 +307,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
@@ -346,6 +346,6 @@ GNUmakefile:
 # strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
 # Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
-# Finished Make data base on Wed Nov 23 19:07:23 2022
+# Finished Make data base on Thu Nov 24 22:35:45 2022
 
  
