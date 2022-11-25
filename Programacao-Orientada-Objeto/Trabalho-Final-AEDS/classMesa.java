@@ -10,11 +10,13 @@ class Mesa {
     private boolean resposta;
     private Cliente[] clientes = new Cliente[this.PESSOAS_POR_MESA];
     private int numCadastrados = 0;
+    private int numAtual;
 
     //Construtor
     public Mesa(){
 
         this.numeroMesa++;
+        this.numAtual = this.numeroMesa;
 
     }
 
@@ -43,7 +45,7 @@ class Mesa {
 
     }
 
-    public boolean adicionaCliente(String nome, String email){
+    public void adicionaCliente(String nome, String email){
 
         this.clientes[this.numCadastrados].setNome(nome);
         this.clientes[this.numCadastrados].setEmail(email);
@@ -60,20 +62,20 @@ class Mesa {
         }
         else {
 
-            System.out.println("Mesa Número "+ this.numeroMesa + ":");
+            System.out.println("Mesa Número "+ this.numAtual + ":");
 
-            if (numCadastrados == 0){
+            if (this.numCadastrados == 0){
 
-                System.out.println("A mesa número "+ this.numCadastrados +" não está reservada");
+                System.out.println("A mesa número "+ this.numAtual +" não está reservada");
 
             }
             else {
 
                 System.out.println("Cliente(s):");
                 
-                for (int comparador; comparador < this.numCadastrados; comparador++){
+                for (int comparador = 0; comparador < this.numCadastrados; comparador++){
 
-                   Sytem.out.println("- "+ this.clientes[comparador].getNome() +" - "+ this.clientes[comparador].getEmail() +";"); 
+                   System.out.println("- "+ this.clientes[comparador].getNome() +" - "+ this.clientes[comparador].getEmail() +";"); 
 
                 }
 

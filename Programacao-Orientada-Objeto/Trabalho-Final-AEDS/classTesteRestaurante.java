@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 class TesteRestaurante{
 
     public static void main(String[] args){
 
+        Scanner scan = new Scanner(System.in);
         Restaurante restaurante = new Restaurante();
         boolean repetir = true;
         int escolha;
@@ -14,7 +17,11 @@ class TesteRestaurante{
 
             System.out.println("1 - Mostrar informações");
 
+            System.out.print("> ");
+            escolha = scan.nextInt();
+
             switch(escolha){
+                
                 case 1:
                     
                     restaurante.mostraInfo();
