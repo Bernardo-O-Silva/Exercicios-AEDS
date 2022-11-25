@@ -7,6 +7,7 @@ class Restaurante {
     private String nome;
     private String endereco;
     private Mesa[] mesas = new Mesa[this.NUM_MESAS];
+    private boolean reservada = false;
 
     //Construtor
 
@@ -60,5 +61,23 @@ class Restaurante {
         }
 
     }
+
+    public boolean reservaMesa(int numMesa){
+
+        numMesa--;
+
+        if (numMesa < 0 || numMesa >= this.NUM_MESAS){
+
+            return false;
+
+        }
+        else {
+
+           return this.mesas[numMesa].reservar();
+
+        }
+
+    }
+
 
 }

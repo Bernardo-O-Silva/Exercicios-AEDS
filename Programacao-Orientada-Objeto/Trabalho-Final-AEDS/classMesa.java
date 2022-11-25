@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Mesa {
 
     //Constantes
@@ -11,6 +13,10 @@ class Mesa {
     private Cliente[] clientes = new Cliente[this.PESSOAS_POR_MESA];
     private int numCadastrados = 0;
     private int numAtual;
+    private int numDesejados;
+    private String nomeAux;
+    private String emailAux;
+    Scanner scan = new Scanner(System.in);
 
     //Construtor
     public Mesa(){
@@ -21,9 +27,15 @@ class Mesa {
     }
 
     //Métodos
-    public void setData(String data){
+    public void setData(){
 
-        this.data = data;
+        this.data = this.scan.nextLine();
+
+    }
+
+    public String getData(){
+
+        return this.data;
 
     }
 
@@ -33,6 +45,41 @@ class Mesa {
 
             this.reserva = true;
             this.resposta = true;
+            
+            System.out.print("Digite a data da sua reserva: ");
+            this.setData();
+
+            for (boolean comparador = false; comparador != true; comparador = comparador){
+
+                System.out.print("Digite o número de pessoas da mesa "+ this.numAtual +": ");
+                this.numDesejados = this.scan.nextInt();                
+
+                if (this.numDesejados < 1 || this.numDesejados > this.PESSOAS_POR_MESA){
+
+                    System.out.println("Erro: o número deve estar entre 1 e "+ this.PESSOAS_POR_MESA +"!\n");
+
+                }
+                else {
+
+                    comparador = true;
+
+                }
+
+            }
+
+            scan.nextLine();
+
+            for (int comparador = 0; comparador < this.numDesejados; comparador++){
+
+                System.out.print("Digite o nome do "+ (comparador + 1) +"º cliente: ");
+                this.nomeAux = scan.nextLine();
+                
+                System.out.print("Digite o email do "+ (comparador + 1) +"º cliente: ");
+                this.emailAux = scan.nextLine();
+
+                this.adicionaCliente(this.nomeAux, this.emailAux);
+
+            }
 
         }
         else {
@@ -46,6 +93,8 @@ class Mesa {
     }
 
     public void adicionaCliente(String nome, String email){
+
+        this.clientes[this.numCadastrados] = new Cliente();
 
         this.clientes[this.numCadastrados].setNome(nome);
         this.clientes[this.numCadastrados].setEmail(email);
@@ -62,22 +111,36 @@ class Mesa {
         }
         else {
 
-            System.out.println("Mesa Número "+ this.numAtual + ":");
+            System.out.println("Mesa Número "+ this.numAtual + ":\n");
 
-            if (this.numCadastrados == 0){
+            if (this.reserva == false){
 
-                System.out.println("A mesa número "+ this.numAtual +" não está reservada");
+                System.out.println("A mesa número "+ this.numAtual +" não está reservada!\n");
 
             }
             else {
 
-                System.out.println("Cliente(s):");
-                
-                for (int comparador = 0; comparador < this.numCadastrados; comparador++){
+                System.out.println("Reservada para: "+ this.data + "\n");
 
-                   System.out.println("- "+ this.clientes[comparador].getNome() +" - "+ this.clientes[comparador].getEmail() +";"); 
+                if (this.numCadastrados == 0) {
+
+                    System.out.println("Não há clientes cadastrados!\n");
+
 
                 }
+                else {
+
+                    System.out.println("Cliente(s):");
+
+                    for (int comparador = 0; comparador < this.numCadastrados; comparador++){
+
+                        System.out.println("- "+ this.clientes[comparador].getNome() +" - "+ this.clientes[comparador].getEmail() +";"); 
+
+                    }
+
+                    System.out.println("\n");
+
+                }                
 
             }
 
