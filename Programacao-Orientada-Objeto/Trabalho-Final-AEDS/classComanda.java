@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 abstract class Comanda{
     private ArrayList<String> consumo = new ArrayList<String>();
     private double valor;
@@ -16,7 +17,7 @@ abstract class Comanda{
     }
 
     public void setValor(double v) {
-        this.valor = v;
+        this.valor = this.valor + v;
     }
 
     public double calcular10porcento() {

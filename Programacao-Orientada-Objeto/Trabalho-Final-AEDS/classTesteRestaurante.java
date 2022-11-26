@@ -19,7 +19,10 @@ class TesteRestaurante{
             System.out.println("Digite o que deseja fazer:\n");
 
             System.out.println("1 - Mostrar informações");
-            System.out.println("2 - Cadastrar uma mesa");
+            System.out.println("2 - Reservar uma mesa");
+            System.out.println("3 - Cancelar reserva");
+            System.out.println("4 - Fazer pedido");
+            System.out.println("5 - Pagar");
             System.out.println("0 - Sair");
 
             System.out.print("\n> ");
@@ -45,15 +48,64 @@ class TesteRestaurante{
 
                     if (restaurante.reservaMesa(numMesa) == true){
 
-                        System.out.println("Mesa reservada com sucesso!");                        
+                        System.out.println("Mesa reservada com sucesso!");               
 
                     }
                     else {
 
-                        System.out.println("A mesa"+ numMesa +" já está cadastrada!");
+                        if (numMesa < restaurante.getNumMesas() || numMesa > restaurante.getNumMesas()){
+
+                            System.out.println("Número inválido digitado");
+
+                        }
+
+                        System.out.println("A mesa "+ numMesa +" já reservada!");
                         
                     }
                     break;
+                
+                case 3:
+
+                    System.out.print("Digite o número da mesa cuja reserva deseja cancelar: ");
+                    numMesa = scan.nextInt();
+
+                    if (restaurante.cancelaReserva(numMesa) == true){
+
+                        System.out.println("Reserva cancelada.");         
+
+                    }
+
+                    break;
+
+                case 4:
+
+                    System.out.print("Digite o número da mesa cujo pedido deseja fazer: ");
+                    numMesa = scan.nextInt();                    
+                    if (restaurante.setComanda(numMesa) == false){
+
+                        System.out.println("Número inválido digitado.");
+
+                    }
+
+                    break;
+                
+                case 5:
+
+                    System.out.print("Digite o número da mesa conta deseja fechar: ");
+                    numMesa = scan.nextInt();  
+
+                    if (restaurante.pagar(numMesa) == false){
+
+                        System.out.println("Número inválido digitado.");
+
+                    }                
+                    else {
+
+                        restaurante.cancelaReserva(numMesa);
+                        System.out.println("Obrigado por escolher o Restaurante "+ restaurante.getNome() +", volte sempre!" );
+
+                    }
+                    break;                                                       
 
                 default:
                     
